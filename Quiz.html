@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ThinkTrack</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="welcome-container" id="welcome-screen" role="main">
+        <h1>ThinkTrack</h1>
+        <h2>Challenge Your Brain!</h2>
+        <p>
+            Welcome to the ultimate quiz challenge. Test your knowledge across a variety of categories, from Web Development to History. Are you ready to prove your expertise?
+        </p>
+        <p>
+            Here's what you can expect:
+        </p>
+        <ul>
+            <li>&#128205; Choose from five exciting categories.</li>
+            <li>&#128205; Answer 10 questions per quiz.</li>
+            <li>&#128205; Beat the 15-second timer on each question.</li>
+            <li>&#128205; Beware! A wrong answer will cost you a 5-second time penalty.</li>
+        </ul>
+        <button id="welcome-btn">Start the Challenge</button>
+    </div>
+
+    <main class="quiz-container" id="quiz-screen" role="main">
+        <h1>ThinkTrack</h1>
+        <p class="intro">
+            Select a category from the dropdown and test your knowledge! You have 15 seconds per question,
+            and selecting a wrong answer results in a 5-second penalty. Good luck!
+        </p>
+
+        <label for="categorySelect">Choose a Category:</label>
+        <select id="categorySelect" aria-label="Choose category">
+            <option value="" disabled selected>Select category</option>
+        </select>
+
+        <button id="start-btn" disabled>Start Quiz</button>
+
+        <div class="feedback-text" id="feedbackMsg"></div>
+        <div class="timer-bar-container">
+            <div class="timer-bar" id="timerBar"></div>
+        </div>
+        <div class="timer-text" id="timerText"></div>
+        <div class="question-text" id="questionText"></div>
+        <div class="options" id="optionsList"></div>
+        <div id="result"></div>
+        <button id="restart-btn">Restart Quiz</button>
+    </main>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
