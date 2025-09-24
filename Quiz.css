@@ -286,4 +286,15 @@ button#welcome-btn:hover {
         padding: 12px 16px;
         font-size: 0.95rem;
     }
+
+}
+
+.correct-text {
+    color: #15803d;
+    font-weight: 600;
+}
+
+.wrong-text {
+    color: #b91c1c;
+    font-weight: 600;
 }
